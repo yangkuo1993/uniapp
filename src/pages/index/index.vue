@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-09-06 16:21:42
- * @LastEditTime: 2021-09-08 16:23:25
+ * @LastEditTime: 2021-09-08 16:35:46
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /my-project/src/pages/index/index.vue
@@ -18,7 +18,9 @@
 </template>
 
 <script>
+import index from '@/mixins';
 export default {
+  mixins: [index],
   data() {
     return {
       title: 1631089379107,

@@ -19,7 +19,7 @@
 export default {
   data() {
     return {
-      title: "Hello",
+      title: 'Hello',
     };
   },
   onLoad() {},
@@ -28,7 +28,7 @@ export default {
       try {
         console.log(1);
         uni.navigateTo({
-          url: "/pages/home/home",
+          url: '/pages/home/home',
         });
       } catch (e) {
         console.error(e);

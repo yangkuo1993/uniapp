@@ -7,27 +7,21 @@
  * @FilePath: /my-project/src/pages/home/home.vue
 -->
 <template>
-	<view class="content">
-		<view>{{title}}1234</view>
-	</view>
+  <view class="content">
+    <view>{{ title }}1234</view>
+  </view>
 </template>
 
 <script>
-	export default {
-		data() {
-			return {
-				title: 'home'
-			}
-		},
-		onLoad() {
-
-		},
-		methods: {
-
-		}
-	}
+export default {
+  data() {
+    return {
+      title: 'home',
+    };
+  },
+  onLoad() {},
+  methods: {},
+};
 </script>
 
-<style>
-	
-</style>
+<style></style>

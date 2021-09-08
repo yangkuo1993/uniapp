@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-09-06 16:21:42
- * @LastEditTime: 2021-09-08 13:53:43
+ * @LastEditTime: 2021-09-08 16:13:24
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /my-project/src/pages/index/index.vue
@@ -10,7 +10,9 @@
   <view class="content">
     <image class="logo" src="/static/logo.png"></image>
     <view>
-      <text @click="goto" class="title">{{ title }}</text>
+      <text @click="goto" class="title">
+        {{ title }}{{ $t('login.username') }}
+      </text>
     </view>
   </view>
 </template>

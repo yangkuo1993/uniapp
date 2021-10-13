@@ -9,6 +9,7 @@
 import Vue from 'vue';
 import VueI18n from 'vue-i18n';
 import store from '@/stores/store';
+import '@/themes/index.scss';
 import { defaultLanguage } from '@/utils/config';
 import { H5ENV, NotH5 } from '@/utils/uniEnv';
 import messages from '@/i18n';

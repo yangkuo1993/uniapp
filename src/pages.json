@@ -10,7 +10,7 @@
     {
       "path": "pages/home/home",
       "style": {
-        "navigationBarTitleText": "home"
+        "navigationBarTitleText": "首页"
       },
       "name": "home"
     },
@@ -24,16 +24,23 @@
     {
       "path": "pages/order/order",
       "style": {
-        "navigationBarTitleText": "order"
+        "navigationBarTitleText": "订单"
       },
       "name": "order"
     },
     {
       "path": "pages/my/my",
       "style": {
-        "navigationBarTitleText": "my"
+        "navigationBarTitleText": "我的"
       },
       "name": "my"
+    },
+    {
+      "path": "pages/class/class",
+      "style": {
+        "navigationBarTitleText": "课表"
+      },
+      "name": "class"
     }
   ],
   "tabBar": {
@@ -49,7 +56,7 @@
         "text": "首页"
       },
       {
-        "pagePath": "pages/index/index",
+        "pagePath": "pages/class/class",
         "iconPath": "static/images/unclass.png",
         "selectedIconPath": "static/images/class.png",
         "text": "课表"
@@ -71,7 +78,7 @@
   "globalStyle": {
     "navigationBarTextStyle": "black",
     "navigationBarTitleText": "uni-app",
-    "navigationBarBackgroundColor": "#F8F8F8",
+    "navigationBarBackgroundColor": "#ffffff",
     "backgroundColor": "#F8F8F8"
   }
 }

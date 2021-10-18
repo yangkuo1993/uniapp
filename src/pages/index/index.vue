@@ -31,15 +31,12 @@ export default {
     goto() {
       try {
         // console.log(1);
-        // uni.navigateTo({
-        //   url: '/pages/home/home',
-        // });
-        this.$Router.push({
-          name: 'home',
-          params: {
-            id: 12,
-          },
+        uni.switchTab({
+          url: '/pages/home/home',
         });
+        // this.$Router.push({
+        //   name: 'home',
+        // });
       } catch (e) {
         console.error(e);
       }

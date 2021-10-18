@@ -2,6 +2,24 @@ import { RouterMount, createRouter } from 'uni-simple-router';
 
 const router = createRouter({
   platform: process.env.VUE_APP_PLATFORM,
+  h5: {
+    paramsToQuery: false,
+    vueRouterDev: false,
+    vueNext: false,
+    mode: 'hash',
+    base: '/',
+    linkActiveClass: 'router-link-active',
+    linkExactActiveClass: 'router-link-exact-active',
+    // eslint-disable-next-line no-unused-vars
+    scrollBehavior: (to, from, savedPostion) => ({ x: 0, y: 0 }),
+    fallback: true,
+  },
+  // eslint-disable-next-line no-unused-vars
+  routerErrorEach: (error, router) => {
+    if (error.type === 3) {
+      router.$lockStatus = false;
+    }
+  },
   routes: [
     // eslint-disable-next-line no-undef
     ...ROUTES,
